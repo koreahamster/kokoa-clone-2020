@@ -1,60 +1,9 @@
 @import "./reset.css";
-@import "./status-bar.css";
+@import "./components/status-bar.css";
 @import "./variable.css";
+@import "./screens/login.css";
+@import "./components/nav-bar.css";
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-.welcome-header {
-  margin: 90px 0px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.welcome-header__title {
-  margin-bottom: 40px;
-  font-size: 25px;
-}
-.welcome-header__text {
-  width: 60%;
-  opacity: 0.7;
-}
-
-#login-form {
-  display: flex;
-  flex-direction: column;
-  margin: 0px 30px;
-}
-#login-form input {
-  border: none;
-  padding: 15px 0px;
-  font-size: 18px;
-  border-bottom: 1px solid gray;
-  margin-bottom: 20px;
-  transition: border-color 0.3s ease-in-out;
-}
-
-#login-form input::placeholder {
-  color: gray;
-}
-#login-form input:not([type="submit"]) {
-  border-bottom: 1px solid gray;
-  transition: 0.3s ease-in-out;
-}
-#login-form input:focus {
-  border-color: var(--hotpink);
-}
-#login-form input[type="submit"] {
-  background-color: var(--hotpink);
-  cursor: pointer;
-  padding: 20px 0px;
-  border-radius: 5px;
-}
-#login-form a {
-  text-align: center;
-  text-decoration: none;
-  color: inherit;
-  font-size: 13px;
 }
